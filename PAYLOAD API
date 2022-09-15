@@ -1,0 +1,265 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v2022.5.1"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2022-09-15T20:30:56.557Z",
+				"time": 23.713,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3000/users/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"username\": \"teste\",\n\t\"email\": \"teste@gmail.com\",\n\t\"password\": \"123456\",\n\t\"fullname\": \"teste\"\n} ",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Location",
+							"value": "/users/teste"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "65"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"41-/dtWm6MJyDZEE/TNKswmLK03uwY\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 15 Sep 2022 20:27:13 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 65,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"username\":\"teste\",\"email\":\"teste@gmail.com\",\"fullname\":\"teste\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 23.713,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "criar alunos"
+			},
+			{
+				"startedDateTime": "2022-09-15T20:30:56.557Z",
+				"time": 2.548,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/users/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 404,
+					"statusText": "Not Found",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "69"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"45-zfG5+zAEtuJHIxKTCUwwnFG1IJA\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 15 Sep 2022 19:58:02 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 69,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"statusCode\":404,\"message\":\"Cannot GET /users/\",\"error\":\"Not Found\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2.548,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "obter um aluno"
+			},
+			{
+				"startedDateTime": "2022-09-15T20:30:56.557Z",
+				"time": 0,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:3000/livros/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"id\": 2,\n\t\"codigo\": \"LIV0002\",\n\t\"nome\": \"Livro de NestJS - versão 2.0\",\n\t\"preco\": 250.52\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Alterar livro"
+			},
+			{
+				"startedDateTime": "2022-09-15T20:30:56.557Z",
+				"time": 0,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:3000/livros/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "apagar livros"
+			}
+		]
+	}
+}
